@@ -4,15 +4,171 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="openLocation3"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        android:text="Blood Donation Centres"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hospital" />
+
+            <TextView
+                android:id="@+id/location1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location1_text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/location1_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location1_address" />
+
+            <Button
+                android:id="@+id/location1_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:onClick="openLocation1"
+                android:text="Go now" />
+
+            <TextView
+                android:id="@+id/location2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location2_text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/location2_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location2_address" />
+
+            <Button
+                android:id="@+id/location2_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:onClick="openLocation2"
+                android:text="Go now" />
+
+            <TextView
+                android:id="@+id/location3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location3_text"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/location3_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location3_address" />
+
+            <Button
+                android:id="@+id/location3_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Go now" />
+
+            <TextView
+                android:id="@+id/location4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location4_text"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/location4_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location4_address" />
+
+            <Button
+                android:id="@+id/location4_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:onClick="openLocation4"
+                android:text="Go now" />
+
+            <TextView
+                android:id="@+id/location5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location5_text"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/location5_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location5_address" />
+
+            <Button
+                android:id="@+id/location5_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:onClick="openLocation5"
+                android:text="Go now" />
+
+            <TextView
+                android:id="@+id/blank1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/blank2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

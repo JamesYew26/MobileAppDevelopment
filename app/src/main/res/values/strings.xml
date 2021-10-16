@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">MobileAppDevAssignment</string>
+    <string name="location1_text">Pusat Darah Negara Midvalley Donation Suite</string>
+    <string name="location1_address">T-063, 3rd floor Mezzanine, Lingkaran Syed Putra, Mid Valley Megamall, 59200 Kuala Lumpur</string>
+    <string name="location2_text">National Blood Centre</string>
+    <string name="location2_address">Jln Tun Razak, Titiwangsa, 50400 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</string>
+    <string name="location3_address">Jabatan Perubatan Tranfusi, 59100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</string>
+    <string name="location3_text">Jabatan Perubatan Transfusi</string>
+    <string name="location4_text">Sedarah Malaysia</string>
+    <string name="location4_address">1, Jalan 1/149e, Bandar Sri Petaling, 57000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</string>
+    <string name="location5_text">Pusat Darah Negara Donation Suite (PDN) Putrajaya</string>
+    <string name="location5_address">Lot PT 2280, 2283, Persiaran Seri Perdana, Presint 10, 62000 Putrajaya</string>
 </resources>
