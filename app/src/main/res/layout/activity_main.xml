@@ -7,7 +7,7 @@
     android:onClick="openLocation3"
     tools:context=".MainActivity">
 
-    <TextView
+    <TextView //Title (Name of the app)
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,24 +17,24 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" /> 
 
 
-    <ScrollView
+    <ScrollView // Scroll view to contain all the locations and the banner image
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title">
 
-        <LinearLayout
+        <LinearLayout 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="5dp" // leaving some spacing left and right for better view of the location
             android:layout_marginRight="5dp"
             android:orientation="vertical">
 
-            <ImageView
+            <ImageView //UI design banner with image
                 android:id="@+id/banner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/hospital" />
 
-            <TextView
+            <TextView //location 1 for blood doantion centre (Pusat Darah Negara Midvalley Donation Suite)
                 android:id="@+id/location1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
                 android:onClick="openLocation1"
                 android:text="Go now" />
 
-            <TextView
+            <TextView //location 2 for blood doantion centre (National Blood Centre)
                 android:id="@+id/location2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
                 android:onClick="openLocation2"
                 android:text="Go now" />
 
-            <TextView
+            <TextView //location 3 for blood doantion centre (Jabatan Perubatan Transfusi)
                 android:id="@+id/location3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                 android:layout_marginBottom="15dp"
                 android:text="Go now" />
 
-            <TextView
+            <TextView //location 4 for blood doantion centre (Sedarah Malaysia)
                 android:id="@+id/location4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -130,7 +130,7 @@
                 android:onClick="openLocation4"
                 android:text="Go now" />
 
-            <TextView
+            <TextView //location 5 for blood doantion centre (Pusat Darah Negara Donation Suite (PDN) Putrajaya)
                 android:id="@+id/location5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
