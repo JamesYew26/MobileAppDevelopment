@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,7 +8,7 @@
     android:onClick="openLocation3"
     tools:context=".MainActivity">
 
-    <TextView //Title (Name of the app)
+    <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" /> 
 
 
-    <ScrollView // Scroll view to contain all the locations and the banner image
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,11 +31,11 @@
         <LinearLayout 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp" // leaving some spacing left and right for better view of the location
+            android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:orientation="vertical">
 
-            <ImageView //UI design banner with image
+            <ImageView
                 android:id="@+id/banner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,7 +44,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/hospital" />
 
-            <TextView //location 1 for blood doantion centre (Pusat Darah Negara Midvalley Donation Suite)
+            <TextView
                 android:id="@+id/location1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -57,15 +58,34 @@
                 android:layout_height="wrap_content"
                 android:text="@string/location1_address" />
 
-            <Button
-                android:id="@+id/location1_btn"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:onClick="openLocation1"
-                android:text="Go now" />
 
-            <TextView //location 2 for blood doantion centre (National Blood Centre)
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/location1_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:onClick="openLocation1"
+                    android:layout_weight="1"
+                    android:text="Go now" />
+
+                <Button
+                    android:id="@+id/location1_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="request"
+                    android:layout_weight="1"
+                    android:text="Request" />
+
+            </LinearLayout>
+
+            <TextView
                 android:id="@+id/location2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -79,15 +99,34 @@
                 android:layout_height="wrap_content"
                 android:text="@string/location2_address" />
 
-            <Button
-                android:id="@+id/location2_btn"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:onClick="openLocation2"
-                android:text="Go now" />
 
-            <TextView //location 3 for blood doantion centre (Jabatan Perubatan Transfusi)
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/location2_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:onClick="openLocation2"
+                    android:layout_weight="1"
+                    android:text="Go now" />
+
+                <Button
+                    android:id="@+id/location2_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="request"
+                    android:layout_weight="1"
+                    android:text="Request" />
+
+            </LinearLayout>
+
+            <TextView
                 android:id="@+id/location3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -101,14 +140,34 @@
                 android:layout_height="wrap_content"
                 android:text="@string/location3_address" />
 
-            <Button
-                android:id="@+id/location3_btn"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:text="Go now" />
 
-            <TextView //location 4 for blood doantion centre (Sedarah Malaysia)
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/location3_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:onClick="openLocation3"
+                    android:layout_weight="1"
+                    android:text="Go now" />
+
+                <Button
+                    android:id="@+id/location3_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="request"
+                    android:layout_weight="1"
+                    android:text="Request" />
+
+            </LinearLayout>
+
+            <TextView
                 android:id="@+id/location4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -122,15 +181,34 @@
                 android:layout_height="wrap_content"
                 android:text="@string/location4_address" />
 
-            <Button
-                android:id="@+id/location4_btn"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:onClick="openLocation4"
-                android:text="Go now" />
 
-            <TextView //location 5 for blood doantion centre (Pusat Darah Negara Donation Suite (PDN) Putrajaya)
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/location4_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:onClick="openLocation4"
+                    android:layout_weight="1"
+                    android:text="Go now" />
+
+                <Button
+                    android:id="@+id/location4_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="request"
+                    android:layout_weight="1"
+                    android:text="Request" />
+
+            </LinearLayout>
+
+            <TextView
                 android:id="@+id/location5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -144,13 +222,32 @@
                 android:layout_height="wrap_content"
                 android:text="@string/location5_address" />
 
-            <Button
-                android:id="@+id/location5_btn"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:onClick="openLocation5"
-                android:text="Go now" />
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/location5_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:onClick="openLocation5"
+                    android:layout_weight="1"
+                    android:text="Go now" />
+
+                <Button
+                    android:id="@+id/location5_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:onClick="request"
+                    android:layout_weight="1"
+                    android:text="Request" />
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/blank1"
