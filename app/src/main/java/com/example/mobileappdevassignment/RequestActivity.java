@@ -17,6 +17,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Date;
 
@@ -77,14 +78,21 @@ public class RequestActivity extends AppCompatActivity implements AdapterView.On
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(RequestActivity.this, ConfirmActivity.class);
-                intent.putExtra("LOCATION", hospital);
-                intent.putExtra("NAME", et_name.getText().toString());
-                intent.putExtra("AGE", et_age.getText().toString());
-                intent.putExtra("BLOOD", selected_blood);
-                intent.putExtra("DATE", selected_date);
-                intent.putExtra("NUMBER", getIntent().getIntExtra("NUMBER", 0));
-                startActivity(intent);
+                if (et_name.getText().toString().isEmpty()) {
+                    Toast.makeText(RequestActivity.this, "Name must not be empty", Toast.LENGTH_LONG).show();
+                } else if (et_age.getText().toString().isEmpty()) {
+                    Toast.makeText(RequestActivity.this, "Age must not be empty", Toast.LENGTH_LONG).show();
+                } else {
+                    Intent intent = new Intent(RequestActivity.this, ConfirmActivity.class);
+                    intent.putExtra("LOCATION", hospital);
+                    intent.putExtra("NAME", et_name.getText().toString());
+                    intent.putExtra("AGE", et_age.getText().toString());
+                    intent.putExtra("BLOOD", selected_blood);
+                    intent.putExtra("DATE", selected_date);
+                    intent.putExtra("NUMBER", getIntent().getIntExtra("NUMBER", 0));
+                    startActivity(intent);
+                }
+
 
             }
         });
