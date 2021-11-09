@@ -42,6 +42,10 @@ public class ConfirmActivity extends AppCompatActivity {
         btn_finish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                MyDataBaseHelper myDataBaseHelper = new MyDataBaseHelper(ConfirmActivity.this);
+                myDataBaseHelper.addInfo(tv_name.getText().toString(), tv_age.getText().toString(), tv_blood.getText().toString(), tv_date.getText().toString(), tv_hospital.getText().toString());
+
                 int num = getIntent().getIntExtra("NUMBER", 0);
                 if (num == 1) {
                     prefs.setLocation1(1);
@@ -54,7 +58,6 @@ public class ConfirmActivity extends AppCompatActivity {
                 } else if (num == 5) {
                     prefs.setLocation5(1);
                 }
-
                 Intent intent = new Intent(ConfirmActivity.this, MainActivity.class);
                 startActivity(intent);
             }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MobileAppDevAssignment</string>
+    <string name="app_name">Blood Donor App</string>
     <string name="location1_text">Pusat Darah Negara Midvalley Donation Suite</string>
     <string name="location1_address">T-063, 3rd floor Mezzanine, Lingkaran Syed Putra, Mid Valley Megamall, 59200 Kuala Lumpur</string>
     <string name="location2_text">National Blood Centre</string>
