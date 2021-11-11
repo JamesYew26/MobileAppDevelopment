@@ -4,24 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center|top"
     android:orientation="vertical"
-    tools:context=".Login">
+    tools:context=".SignUp">
 
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="240dp"
         app:srcCompat="@drawable/hospital" />
 
     <TextView
-        android:id="@+id/LogInText"
+        android:id="@+id/SignUpText"
         android:layout_width="match_parent"
-        android:layout_height="53dp"
-        android:layout_marginBottom="50dp"
+        android:layout_height="40dp"
         android:background="@color/purple_200"
         android:gravity="center|left"
-        android:text="  Login Here"
+        android:text="  Sign Up Here"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -30,12 +30,10 @@
         android:id="@+id/et_PhoneNum"
         android:layout_width="250dp"
         android:layout_height="35dp"
-        android:layout_gravity="center"
-        android:layout_margin="8dp"
         android:background="@drawable/inputbox"
         android:gravity="center"
+        android:layout_marginTop="50dp"
         android:hint="Enter your phone number" />
-
 
     <EditText
         android:id="@+id/et_Password"
@@ -49,28 +47,27 @@
         android:gravity="center"
         android:hint="Enter password"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText
+        android:id="@+id/et_ConfirmPassword"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:inputType="textPassword"
         android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/inputbox"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:hint="Confirm password"/>
 
-        <Button
-            android:id="@+id/SignUp_SignUp_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:text="Login" />
 
-        <Button
-            android:id="@+id/SignUp_btn"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:text="Sign Up" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/SignUp_SignUp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:onClick="SignUpAct"
+        android:text="Sign Up" />
+
 
 </LinearLayout>

@@ -21,6 +21,7 @@ public class MyDataBaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_LOCATION = "Donating_Location";
 
 
+
     public MyDataBaseHelper(@Nullable Context context) {
         super(context, "UserAppointment.db", null, 1);
         this.context = context;
@@ -34,6 +35,7 @@ public class MyDataBaseHelper extends SQLiteOpenHelper {
                 COLUMN_DATE + " TEXT," + COLUMN_LOCATION + " TEXT )";
         DB.execSQL(query);
     }
+
 
     @Override
     public void onUpgrade(SQLiteDatabase DB, int i, int i1) {

@@ -10,15 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileAppDevAssignment">
         <activity
-            android:name=".LoginActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+            android:name=".SignUp"
+            android:exported="false" />
         <activity
             android:name=".ConfirmActivity"
             android:exported="false" />
@@ -26,9 +19,13 @@
             android:name=".RequestActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false">
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
