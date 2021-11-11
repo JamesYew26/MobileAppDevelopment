@@ -34,7 +34,8 @@
         android:layout_margin="8dp"
         android:background="@drawable/inputbox"
         android:gravity="center"
-        android:hint="Enter your phone number" />
+        android:hint="Enter your phone number"
+        android:inputType="phone"/>
 
 
     <EditText
