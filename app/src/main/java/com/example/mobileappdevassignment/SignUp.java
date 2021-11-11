@@ -2,10 +2,8 @@ package com.example.mobileappdevassignment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,10 +20,10 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
 
         DBHelper = new LogInDatabaseHelper(this);
-        PhoneNumber = findViewById(R.id.et_PhoneNum);
-        Password = findViewById(R.id.et_Password);
-        ConfirmPassword = findViewById(R.id.et_ConfirmPassword);
-        SignUp = findViewById(R.id.SignUp_SignUp_btn);
+        PhoneNumber = findViewById(R.id.et_SignUpPhoneNum);
+        Password = findViewById(R.id.et_SignUpPassword);
+        ConfirmPassword = findViewById(R.id.et_SignUpConfirmPassword);
+        SignUp = findViewById(R.id.btn_SignUpSignUp);
     }
 
 
@@ -54,6 +52,8 @@ public class SignUp extends AppCompatActivity {
                         PhoneNumber.setText("");
                         Password.setText("");
                         ConfirmPassword.setText("");
+                        Intent intent = new Intent(this,Login.class);
+                        startActivity(intent);
                     }
                 }
                 else {
@@ -64,10 +64,5 @@ public class SignUp extends AppCompatActivity {
                 displayToast("Password is not correct");
             }
         }
-    }
-
-    public void SignUpAct(View view) {
-        Intent intent = new Intent(this,Login.class);
-        startActivity(intent);
     }
 }

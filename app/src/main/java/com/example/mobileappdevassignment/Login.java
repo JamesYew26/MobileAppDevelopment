@@ -20,9 +20,9 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         DBHelper = new LogInDatabaseHelper(this);
-        PhoneNum = findViewById(R.id.et_PhoneNum);
-        Password = findViewById(R.id.et_Password);
-        Login = findViewById(R.id.SignUp_SignUp_btn);
+        PhoneNum = findViewById(R.id.et_LoginPhoneNum);
+        Password = findViewById(R.id.et_LoginPassword);
+        Login = findViewById(R.id.btn_LoginLogin);
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,7 +43,7 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        Signup = findViewById(R.id.SignUp_btn);
+        Signup = findViewById(R.id.btn_LoginSignUp);
         Signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
