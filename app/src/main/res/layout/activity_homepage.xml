@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Homepage">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:srcCompat="@drawable/hospital" />
+
+    <TextView
+        android:id="@+id/HomepageText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/purple_200"
+        android:gravity="center|left"
+        android:text="  Please select a service"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_Info"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:onClick="BloodDonationInfo"
+        android:text="Blood donation info" />
+
+    <Button
+        android:id="@+id/btn_Registration"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:onClick="Registration"
+        android:text="Register for blood donation" />
+
+    <Button
+        android:id="@+id/btn_Appointment"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="Appointment"
+        android:text="Appointment" />
+</LinearLayout>

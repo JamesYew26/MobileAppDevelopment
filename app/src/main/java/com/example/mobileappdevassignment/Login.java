@@ -32,7 +32,7 @@ public class Login extends AppCompatActivity {
                 Boolean loginSucess = DBHelper.checkLogin(phonenum,password);
                 if (loginSucess){
                     displayToast("Login Successful !");
-                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                    Intent intent = new Intent(getApplicationContext(),Homepage.class);
                     startActivity(intent);
                 }
                 else {
