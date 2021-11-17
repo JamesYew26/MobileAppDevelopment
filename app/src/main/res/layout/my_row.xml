@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/appointment_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:id="@+id/apppointment_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/appointment_id_text"
+                app:layout_constraintTop_toTopOf="@id/appointment_id_text" />
+
+            <TextView
+                android:id="@+id/apppointment_age_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                app:layout_constraintStart_toStartOf="@id/apppointment_name_text"
+                app:layout_constraintTop_toBottomOf="@id/apppointment_name_text"
+                android:layout_marginBottom="30dp"
+                />
+
+            <TextView
+                android:id="@+id/apppointment_bloodtype_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Type"
+                app:layout_constraintStart_toStartOf="@id/apppointment_age_text"
+                app:layout_constraintTop_toBottomOf="@id/apppointment_age_text"
+                android:layout_marginBottom="30dp"
+                />
+
+            <TextView
+                android:id="@+id/apppointment_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                app:layout_constraintStart_toStartOf="@id/apppointment_bloodtype_text"
+                app:layout_constraintTop_toBottomOf="@id/apppointment_bloodtype_text"
+                android:layout_marginBottom="30dp"
+                />
+
+            <TextView
+                android:id="@+id/apppointment_location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                app:layout_constraintStart_toStartOf="@id/apppointment_date_text"
+                app:layout_constraintTop_toBottomOf="@id/apppointment_date_text"
+                android:layout_marginBottom="30dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

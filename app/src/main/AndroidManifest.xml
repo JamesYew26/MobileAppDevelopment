@@ -12,6 +12,7 @@
         <activity
             android:name=".Appointment"
             android:exported="true"
+            android:label="Appointment"
             android:parentActivityName=".Homepage"/>
         <activity
             android:name=".Eligibility"

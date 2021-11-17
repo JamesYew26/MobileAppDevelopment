@@ -2,6 +2,7 @@ package com.example.mobileappdevassignment;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.TextView;
@@ -66,5 +67,15 @@ public class MyDataBaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    Cursor readAppointmentData(){
+        String query = " SELECT * FROM " + TABLE_NAME;
+        SQLiteDatabase DB = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if (DB != null){
+            cursor = DB.rawQuery(query,null);
+        }
+        return cursor;
+    }
 }
 
